@@ -16,6 +16,6 @@ public class HelloWorldController {
 
     @RequestMapping("/hello")
     public List<Category> index() throws Exception {
-        return categoryDAO.findAll();
+        return categoryDAO.findAllByNativeQuery();
     }
 }

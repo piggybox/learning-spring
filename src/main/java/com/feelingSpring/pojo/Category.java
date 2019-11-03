@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+// TODO 我们习惯这个目录叫entity
+
 @Entity
 @Table(name = "category_")
 public class Category {
