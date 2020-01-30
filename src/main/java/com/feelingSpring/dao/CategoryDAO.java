@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-import com.feelingSpring.pojo.Category;
+import com.feelingSpring.entity.*;
 
 // TODO 我们习惯这个目录叫repository
 

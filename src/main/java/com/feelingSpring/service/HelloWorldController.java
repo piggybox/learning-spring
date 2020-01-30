@@ -3,7 +3,7 @@ package com.feelingSpring.service;
 import java.util.List;
 
 import com.feelingSpring.dao.CategoryDAO;
-import com.feelingSpring.pojo.Category;
+import com.feelingSpring.entity.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
