@@ -1,15 +1,15 @@
 package com.feelingSpring.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
 import java.util.List;
 
-import com.feelingSpring.entity.*;
+import com.feelingSpring.entity.Ingredient;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.lang.Nullable;
 
 public interface IngredientRepository extends JpaRepository<Ingredient, Integer> {
-
-    @Query(nativeQuery = true, value = "select * from ingredient limit 2")
+    @Nullable
+    @Query(nativeQuery = true, value = "select * from test.ingredient")
     List<Ingredient> findAllByNativeQuery();
 }

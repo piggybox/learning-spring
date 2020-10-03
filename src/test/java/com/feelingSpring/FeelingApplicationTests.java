@@ -1,23 +1,27 @@
 package com.feelingSpring;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.sql.SQLException;
+
+import com.feelingSpring.repository.IngredientRepository;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
+import org.springframework.test.context.jdbc.Sql;
 
 @SpringBootTest
+@Sql({"sql/ddl.sql", "sql/data.sql"})
 class FeelingSpringApplicationTests {
 
 	// 注入数据源对象
 	@Autowired
-	private DataSource defaultDataSource;
+	private IngredientRepository inRepo;
 
 	@Test
-	public void datasourceTest() throws SQLException {
-		System.out.println("默认数据源为：" + defaultDataSource.getClass());
+	public void dataTest() throws SQLException {
+		assertEquals(2, inRepo.findAll().size());
 	}
 
 }
