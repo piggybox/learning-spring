@@ -1,10 +1,10 @@
-package com.feelingSpring;
+package feelingspring;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.sql.SQLException;
 
-import com.feelingSpring.repository.IngredientRepository;
+import feelingspring.repository.IngredientRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

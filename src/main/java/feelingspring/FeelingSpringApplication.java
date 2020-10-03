@@ -1,4 +1,4 @@
-package com.feelingSpring;
+package feelingspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

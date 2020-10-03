@@ -1,4 +1,4 @@
-package com.feelingSpring.entity;
+package feelingspring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

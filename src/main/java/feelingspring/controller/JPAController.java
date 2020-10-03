@@ -1,9 +1,9 @@
-package com.feelingSpring.controller;
+package feelingspring.controller;
 
 import java.util.List;
 
-import com.feelingSpring.entity.Ingredient;
-import com.feelingSpring.repository.IngredientRepository;
+import feelingspring.entity.Ingredient;
+import feelingspring.repository.IngredientRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -7,7 +7,7 @@
         <version>2.3.4.RELEASE</version>
         <relativePath />
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>example</groupId>
     <artifactId>feeling-spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>feeling-spring</name>
